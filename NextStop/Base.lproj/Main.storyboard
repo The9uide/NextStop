@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="iX2-AN-s2P">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="YKp-Gm-Z6k">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,20 +9,165 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Start Navigation View Controller-->
-        <scene sceneID="6hO-Go-ZgO">
+        <!--Traveling View Controller-->
+        <scene sceneID="dyS-Fj-9JF">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JXZ-dz-ZfS" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="3uH-aY-vkl" customClass="StartNavigationViewController" customModule="NextStop" customModuleProvider="target" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kyf-LB-4uA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="TU2-IL-Lx4" customClass="TravelingViewController" customModule="NextStop" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ZBN-U7-Yse"/>
-                        <viewControllerLayoutGuide type="bottom" id="Sve-bd-fa2"/>
+                        <viewControllerLayoutGuide type="top" id="G3X-sL-NhT"/>
+                        <viewControllerLayoutGuide type="bottom" id="ne7-tb-HdN"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Yi5-dz-wEc">
+                    <view key="view" contentMode="scaleToFill" id="msg-Qy-gy5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" multipleTouchEnabled="YES" alpha="0.75999999046325684" contentMode="center" fixedFrame="YES" text="จาก “ลาดกระบัง” ไป" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tc0-1m-Rnh">
+                            <view opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sAE-1p-hO7" userLabel="9332AC47-D307-472E-A316-A1222F971847-314-0001B46A7A47077E">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <subviews>
+                                    <label opaque="NO" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" text="รามคำแหง" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Bw-LO-caN">
+                                        <rect key="frame" x="20" y="114" width="347" height="52"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <accessibility key="accessibilityConfiguration" hint="" identifier="AC874988-2DF8-4E96-8C1F-38C20F4FEFF1" label=""/>
+                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi-Bold" pointSize="40"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                    </label>
+                                    <label opaque="NO" multipleTouchEnabled="YES" alpha="0.5" contentMode="center" fixedFrame="YES" text="สถานีต่อไป" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mYf-qQ-QJp">
+                                        <rect key="frame" x="20" y="78" width="118" height="33"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <accessibility key="accessibilityConfiguration" hint="" identifier="7BB2DB6D-448D-4FA6-93CD-2BA4D20CBBC2" label=""/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="25"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.41960784309999999" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" hint="" identifier="6A0BBD45-69D0-450B-9369-5A0757DC931F" label=""/>
+                            </view>
+                            <label opaque="NO" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" text="สถานีปลายทาง" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zsb-gB-vc5">
+                                <rect key="frame" x="60" y="222" width="160" height="27"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <accessibility key="accessibilityConfiguration" hint="" identifier="3CFE2015-0253-4A21-A885-9E6119D5863B" label=""/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
+                                <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" multipleTouchEnabled="YES" alpha="0.75999999046325684" contentMode="center" fixedFrame="YES" text="มักกะสัน" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VmF-wC-j8E">
+                                <rect key="frame" x="253" y="222" width="102" height="27"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <accessibility key="accessibilityConfiguration" hint="" identifier="B476ED5B-1D81-4B9C-8663-D1AA7805C735" label=""/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" multipleTouchEnabled="YES" alpha="0.75999999046325684" contentMode="center" fixedFrame="YES" text="8 นาที" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LMQ-zK-j1X" userLabel="3CFD2F19-E23D-4FB1-BD1F-69FF80C4B81D-314-0001B5C8DB6EAA96">
+                                <rect key="frame" x="253" y="275" width="102" height="27"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <accessibility key="accessibilityConfiguration" hint="" identifier="17BA52A4-A827-4893-8DB9-313D5E8E17C8" label=""/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" text="ระยะเวลา" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2QP-fP-91h">
+                                <rect key="frame" x="60" y="275" width="160" height="27"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <accessibility key="accessibilityConfiguration" hint="" identifier="7BA272B7-6493-4797-BE49-937AB35A9DF8" label=""/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
+                                <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="page_11" translatesAutoresizingMaskIntoConstraints="NO" id="WdW-NA-aIT" userLabel="C687F4BD-B5C1-4A2F-8708-ADBDC3DF7499-314-0001B5CC1B837D2F">
+                                <rect key="frame" x="21" y="219" width="23" height="33"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <accessibility key="accessibilityConfiguration" hint="" identifier="AC7D3B3C-6782-4A68-B442-B925847BBE16-asset" label=""/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="clock" translatesAutoresizingMaskIntoConstraints="NO" id="ai0-z0-1kA" userLabel="22EBFD9D-BF44-4B5D-AC04-85DED71D6ACA-314-0001B5CFABC6CBC7">
+                                <rect key="frame" x="19" y="274" width="29" height="29"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <accessibility key="accessibilityConfiguration" hint="" identifier="3C58C5CE-AC8B-4047-BBCA-14A7DE72E0B4-asset" label=""/>
+                            </imageView>
+                            <label opaque="NO" multipleTouchEnabled="YES" alpha="0.72000002861022949" contentMode="center" fixedFrame="YES" text="สถานที่ยอดนิยม" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhp-OF-Aop">
+                                <rect key="frame" x="20" y="365" width="204" height="39"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <accessibility key="accessibilityConfiguration" hint="" identifier="BD47FB80-44BA-4A23-80BC-F7403B3E4245" label=""/>
+                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi-Bold" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" multipleTouchEnabled="YES" alpha="0.72000002861022949" contentMode="center" fixedFrame="YES" text="สถานีรามคำแหง" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aSf-He-dw7">
+                                <rect key="frame" x="20" y="407" width="139" height="27"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <accessibility key="accessibilityConfiguration" hint="" identifier="BD9FCC0B-BFF7-4411-BC02-E3907FFFCC9E" label=""/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
+                                <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="61K-fS-RUl">
+                                <rect key="frame" x="20" y="333" width="335" height="0.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mask1" translatesAutoresizingMaskIntoConstraints="NO" id="04R-ge-mDl">
+                                <rect key="frame" x="20" y="454" width="334.99999999999955" height="190"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="DiB-fJ-uxe">
+                                <rect key="frame" x="367" y="455" width="8" height="189"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vjw-5K-5eW">
+                                <rect key="frame" x="273" y="374" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="no:" destination="TU2-IL-Lx4" eventType="touchUpInside" id="Ku4-fI-f8K"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ljW-bm-I6p">
+                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="TqW-It-wMv">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="cancel:" destination="TU2-IL-Lx4" id="tdB-Ci-jwR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="DestinationStationLabel" destination="VmF-wC-j8E" id="vNd-an-hhX"/>
+                        <outlet property="NextStationLabel" destination="3Bw-LO-caN" id="8bI-Lo-uvY"/>
+                        <outlet property="TimeLabel" destination="LMQ-zK-j1X" id="fDm-pA-ul8"/>
+                        <outlet property="notii" destination="Vjw-5K-5eW" id="WAs-7X-bsE"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="6023.1999999999998" y="355.7721139430285"/>
+        </scene>
+        <!--Start Navigation View Controller-->
+        <scene sceneID="FGF-Qh-vRZ">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hJW-oh-P78" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="Ucf-y2-OvG" customClass="StartNavigationViewController" customModule="NextStop" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="C2I-Dp-uJR"/>
+                        <viewControllerLayoutGuide type="bottom" id="elG-pH-kjH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UXP-vf-cog">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" multipleTouchEnabled="YES" alpha="0.75999999046325684" contentMode="center" fixedFrame="YES" text="จาก “ลาดกระบัง” ไป" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LYT-Vj-RaD">
                                 <rect key="frame" x="20" y="253" width="335" height="33"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <accessibility key="accessibilityConfiguration" hint="" identifier="5565FE35-6AD6-4E19-8404-DD4E0E265C3D" label=""/>
@@ -31,7 +176,7 @@
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
-                            <label opaque="NO" multipleTouchEnabled="YES" alpha="0.75999999046325684" contentMode="center" fixedFrame="YES" text="มักกะสัน" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2zM-oU-hNP">
+                            <label opaque="NO" multipleTouchEnabled="YES" alpha="0.75999999046325684" contentMode="center" fixedFrame="YES" text="มักกะสัน" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sjp-YL-OM1">
                                 <rect key="frame" x="20" y="289" width="335" height="52"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <accessibility key="accessibilityConfiguration" hint="" identifier="A64B9268-6324-4CBF-83E8-4C5657C520B1" label=""/>
@@ -40,7 +185,7 @@
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
-                            <label opaque="NO" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" text="ขึ้นฝั่ง พญาไท" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o28-bo-yP5">
+                            <label opaque="NO" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" text="ขึ้นฝั่ง พญาไท" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tzy-O3-MXZ">
                                 <rect key="frame" x="20" y="351" width="335" height="23"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <accessibility key="accessibilityConfiguration" hint="" identifier="CAFCD64A-E290-4A0C-AD9E-67A2E34E7213" label=""/>
@@ -49,28 +194,28 @@
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="makkasan" translatesAutoresizingMaskIntoConstraints="NO" id="vas-JU-W3f">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="makkasan" translatesAutoresizingMaskIntoConstraints="NO" id="aY4-CO-8yb">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="223"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" hint="" identifier="949CBDF5-276E-41DC-B84C-1991B6F36B09" label=""/>
                             </imageView>
-                            <view opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QCR-Ob-Dxc">
+                            <view opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mct-4W-hCF">
                                 <rect key="frame" x="20" y="404" width="335" height="1"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <accessibility key="accessibilityConfiguration" hint="" identifier="7D3BE06B-488F-45C6-B803-2F84D2B09497" label=""/>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="clock" translatesAutoresizingMaskIntoConstraints="NO" id="N95-pF-TET">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="clock" translatesAutoresizingMaskIntoConstraints="NO" id="xea-Kx-LFq">
                                 <rect key="frame" x="20.005834573424636" y="425.0065197797129" width="34.987789409826746" height="34.985592896343405"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" hint="" identifier="16CCC6C7-E95D-4064-95DB-28FCD08F5E2A" label=""/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Train" translatesAutoresizingMaskIntoConstraints="NO" id="3sC-ew-iaJ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Train" translatesAutoresizingMaskIntoConstraints="NO" id="fYt-Rn-Gsh">
                                 <rect key="frame" x="19.30343169004675" y="484.77939393939391" width="34.107973685663524" height="39.161818181818148"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" hint="" identifier="0EE6EC71-E288-43BD-976E-9C6A7121DF92" label=""/>
                             </imageView>
-                            <label opaque="NO" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" text="17 นาที  (ถึง 9:58 น.)" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60o-pm-OUN">
+                            <label opaque="NO" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" text="17 นาที  (ถึง 9:58 น.)" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vDD-Gt-T56">
                                 <rect key="frame" x="75" y="431" width="185" height="23"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <accessibility key="accessibilityConfiguration" hint="" identifier="56AE6925-10E9-4D02-BAEA-9D3225C0E9D3" label=""/>
@@ -79,7 +224,7 @@
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
-                            <label opaque="NO" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" text="จุดเชื่อมต่อ MRT เพชรบุรี" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kr0-cW-osX">
+                            <label opaque="NO" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" text="จุดเชื่อมต่อ MRT เพชรบุรี" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U4D-Bw-TOV">
                                 <rect key="frame" x="74" y="494" width="192" height="23"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <accessibility key="accessibilityConfiguration" hint="" identifier="A6476599-6F01-4448-96B5-CF4AEFF8C552" label=""/>
@@ -88,13 +233,13 @@
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
-                            <view opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lFT-3o-6l2">
+                            <view opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qj6-SL-aXf">
                                 <rect key="frame" x="0.0" y="555" width="375" height="1"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <accessibility key="accessibilityConfiguration" hint="" identifier="9CD92A8A-FB25-45CC-B53E-CD3A118241E7" label=""/>
                             </view>
-                            <label opaque="NO" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gGN-8s-7lN">
+                            <label opaque="NO" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQh-Vg-eOp">
                                 <rect key="frame" x="20" y="649" width="335" height="48"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <accessibility key="accessibilityConfiguration" hint="" identifier="28959670-404F-476F-9271-08A86B8BF0AD" label=""/>
@@ -105,7 +250,7 @@
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EG9-rF-frI">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LOG-Vz-qMK">
                                 <rect key="frame" x="19" y="592" width="337" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.41960784309999999" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -118,44 +263,62 @@
                                         <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="jkT-o7-e4d" kind="show" id="RHl-HS-nbO"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCy-7r-3a7">
-                                <rect key="frame" x="0.0" y="20" width="45" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YeU-ia-db3">
+                                <rect key="frame" x="1" y="20" width="52" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
-                                <state key="normal" title="&lt;">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="&lt;"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="ConnectStationLabel" destination="Kr0-cW-osX" id="S6L-ek-LS1"/>
-                        <outlet property="DeparturedStationLabel" destination="tc0-1m-Rnh" id="j8d-aU-qFM"/>
-                        <outlet property="SideOfPlatformLabel" destination="o28-bo-yP5" id="2U8-m6-SU7"/>
-                        <outlet property="StationNameLabel" destination="2zM-oU-hNP" id="Ehr-WM-4bQ"/>
-                        <outlet property="TimeToArrivedLabel" destination="60o-pm-OUN" id="ySL-1k-wQ6"/>
+                        <outlet property="ConnectStationLabel" destination="U4D-Bw-TOV" id="muh-Jq-ail"/>
+                        <outlet property="DeparturedStationLabel" destination="LYT-Vj-RaD" id="VGn-A9-Zc6"/>
+                        <outlet property="SideOfPlatformLabel" destination="tzy-O3-MXZ" id="jjy-eL-4iX"/>
+                        <outlet property="StationNameLabel" destination="sjp-YL-OM1" id="SOc-zm-uwo"/>
+                        <outlet property="TimeToArrivedLabel" destination="vDD-Gt-T56" id="PKU-Fl-Xww"/>
                     </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="3864.8000000000002" y="355.7721139430285"/>
         </scene>
-        <!--Select Station Table View Controller-->
-        <scene sceneID="UXh-ff-hOS">
+        <!--Navigation Controller-->
+        <scene sceneID="3kd-pt-7WY">
             <objects>
-                <exit id="eGF-Us-ULl" userLabel="Exit" sceneMemberID="exit"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1FT-D7-JxZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tableViewController id="Den-ix-fmW" customClass="SelectStationTableViewController" customModule="NextStop" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="69" sectionHeaderHeight="28" sectionFooterHeight="28" id="ofL-lg-kNH">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eJZ-D6-5gJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lRu-9R-LoE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3s8-gg-dbh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ClH-7F-Ups" kind="relationship" relationship="rootViewController" id="Ffy-G4-qGO"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="2092" y="-449.32533733133437"/>
+        </scene>
+        <!--Select Station Table View Controller-->
+        <scene sceneID="Ckn-7R-f7C">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i3Y-IZ-M0t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="Fps-l1-4ID" customClass="SelectStationTableViewController" customModule="NextStop" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="69" sectionHeaderHeight="28" sectionFooterHeight="28" id="rKu-nS-Bwt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <view key="tableHeaderView" contentMode="scaleToFill" id="1iS-rG-Hey">
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="SsW-e9-IJ1">
                             <rect key="frame" x="0.0" y="64" width="375" height="45"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.75999999046325684" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="เลือกสถานีต้นทาง" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fcy-a2-yfx">
+                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.75999999046325684" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="เลือกสถานีปลายทาง" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1h7-qD-fma">
                                     <rect key="frame" x="20" y="0.0" width="309" height="47"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi-Bold" pointSize="36"/>
@@ -166,33 +329,33 @@
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StationTableViewCell" rowHeight="70" id="Lf7-la-5mS" customClass="StationTableViewCell" customModule="NextStop" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StationTableViewCell" rowHeight="70" id="5NH-8b-o54" customClass="StationTableViewCell" customModule="NextStop" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="73" width="375" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" tableViewCell="Lf7-la-5mS" id="E6Z-po-3Ko">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" tableViewCell="5NH-8b-o54" id="ZHv-DP-K04">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="69"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="สุวรรณภูมิ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BNf-d3-62B" userLabel="StationName">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="สุวรรณภูมิ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z0a-b9-rzY" userLabel="StationName">
                                             <rect key="frame" x="20" y="18" width="120" height="27"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi-Bold" pointSize="20"/>
                                             <color key="textColor" red="1" green="0.41960784309999999" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" (A1)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HlW-KX-Skm" userLabel="StationId">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" (A1)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DvC-l9-LJJ" userLabel="StationId">
                                             <rect key="frame" x="130" y="18" width="120" height="27"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi-Bold" pointSize="20"/>
                                             <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="icon_slash_location" translatesAutoresizingMaskIntoConstraints="NO" id="2Rd-NG-UWm">
+                                        <imageView hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="icon_slash_location" translatesAutoresizingMaskIntoConstraints="NO" id="ual-fO-ROy">
                                             <rect key="frame" x="319" y="9" width="20" height="29"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <accessibility key="accessibilityConfiguration" hint="" identifier="E8865069-B530-48FF-A411-705622FBE0FE-asset" label=""/>
                                         </imageView>
-                                        <label hidden="YES" opaque="NO" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" text="คุณอยู่ที่นี่" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cGD-qR-aWN">
+                                        <label hidden="YES" opaque="NO" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" text="คุณอยู่ที่นี่" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kY2-xR-9Et">
                                             <rect key="frame" x="303" y="41" width="52" height="17"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <accessibility key="accessibilityConfiguration" hint="" identifier="9972EABB-4F5C-4E79-98B0-A0879D8CE61A" label=""/>
@@ -205,42 +368,44 @@
                                 </tableViewCellContentView>
                                 <inset key="separatorInset" minX="20" minY="0.0" maxX="255" maxY="0.0"/>
                                 <connections>
-                                    <outlet property="StationId" destination="HlW-KX-Skm" id="F67-AJ-weK"/>
-                                    <outlet property="StationName" destination="BNf-d3-62B" id="EUh-5o-Swz"/>
-                                    <outlet property="icon" destination="2Rd-NG-UWm" id="j49-cq-9mF"/>
-                                    <outlet property="iconLabel" destination="cGD-qR-aWN" id="Slq-RJ-gRT"/>
-                                    <segue destination="eGF-Us-ULl" kind="unwind" unwindAction="unwindToMealList:" id="pA0-ty-p5S"/>
+                                    <outlet property="StationId" destination="DvC-l9-LJJ" id="mKh-L0-Xek"/>
+                                    <outlet property="StationName" destination="z0a-b9-rzY" id="Tz5-un-uZm"/>
+                                    <outlet property="icon" destination="ual-fO-ROy" id="9Ew-Et-jND"/>
+                                    <outlet property="iconLabel" destination="kY2-xR-9Et" id="ucv-KC-J0c"/>
+                                    <segue destination="Ucf-y2-OvG" kind="show" id="nKz-GU-2WI">
+                                        <nil key="action"/>
+                                    </segue>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StationDetailTableViewCell" rowHeight="70" id="4eZ-he-PpO" customClass="StationDetailTableViewCell" customModule="NextStop" customModuleProvider="target">
+                            <tableViewCell autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StationDetailTableViewCell" rowHeight="70" id="Smv-fo-U95" customClass="StationDetailTableViewCell" customModule="NextStop" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="143" width="375" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" tableViewCell="4eZ-he-PpO" id="Nll-sb-SxU">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" tableViewCell="Smv-fo-U95" id="Jtl-oL-Vir">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="69"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="มักกะสัน" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DH8-Cs-92U" userLabel="StationName">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="มักกะสัน" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="808-8W-ndr" userLabel="StationName">
                                             <rect key="frame" x="19" y="8" width="266" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi-Bold" pointSize="20"/>
                                             <color key="textColor" red="1" green="0.41960784309999999" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.75999999046325684" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="จุดเชื่อมต่อ รถไฟฟ้า MRT เพชรบุรี" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f4p-jW-WlU" userLabel="StationDetail">
+                                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.75999999046325684" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="จุดเชื่อมต่อ รถไฟฟ้า MRT เพชรบุรี" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lmn-Zw-RT5" userLabel="StationDetail">
                                             <rect key="frame" x="19" y="39" width="266" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" (A1)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xje-Sf-bcY" userLabel="StationId">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" (A1)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PH9-fZ-16l" userLabel="StationId">
                                             <rect key="frame" x="130" y="10" width="120" height="27"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi-Bold" pointSize="20"/>
                                             <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label hidden="YES" opaque="NO" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" text="คุณอยู่ที่นี่" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bTL-OM-yJA">
+                                        <label hidden="YES" opaque="NO" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" text="คุณอยู่ที่นี่" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wXG-kn-bZZ">
                                             <rect key="frame" x="303" y="41" width="52" height="17"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <accessibility key="accessibilityConfiguration" hint="" identifier="9972EABB-4F5C-4E79-98B0-A0879D8CE61A" label=""/>
@@ -249,7 +414,7 @@
                                             <nil key="highlightedColor"/>
                                             <size key="shadowOffset" width="0.0" height="0.0"/>
                                         </label>
-                                        <imageView hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="icon_slash_location" translatesAutoresizingMaskIntoConstraints="NO" id="blL-gL-KxF">
+                                        <imageView hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="icon_slash_location" translatesAutoresizingMaskIntoConstraints="NO" id="fbK-pB-7AR">
                                             <rect key="frame" x="319" y="9" width="20" height="29"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <accessibility key="accessibilityConfiguration" hint="" identifier="E8865069-B530-48FF-A411-705622FBE0FE-asset" label=""/>
@@ -258,63 +423,90 @@
                                 </tableViewCellContentView>
                                 <inset key="separatorInset" minX="20" minY="0.0" maxX="255" maxY="0.0"/>
                                 <connections>
-                                    <outlet property="StationDetailLabel" destination="f4p-jW-WlU" id="N2Z-Od-ZOS"/>
-                                    <outlet property="StationIdLabel" destination="Xje-Sf-bcY" id="Gfq-ae-KD7"/>
-                                    <outlet property="StationNameLabel" destination="DH8-Cs-92U" id="frX-xR-hTQ"/>
-                                    <outlet property="icon" destination="blL-gL-KxF" id="bMJ-SY-wms"/>
-                                    <outlet property="iconLabel" destination="bTL-OM-yJA" id="s01-Mp-nU9"/>
-                                    <segue destination="eGF-Us-ULl" kind="unwind" unwindAction="unwindToMealList:" id="R4B-U1-Fft"/>
+                                    <outlet property="StationDetailLabel" destination="lmn-Zw-RT5" id="Q3D-Mo-2vh"/>
+                                    <outlet property="StationIdLabel" destination="PH9-fZ-16l" id="NM6-ml-B7Q"/>
+                                    <outlet property="StationNameLabel" destination="808-8W-ndr" id="sPS-XP-bDA"/>
+                                    <outlet property="icon" destination="fbK-pB-7AR" id="p9F-mB-e3u"/>
+                                    <outlet property="iconLabel" destination="wXG-kn-bZZ" id="PFo-o3-Wpc"/>
+                                    <segue destination="Ucf-y2-OvG" kind="show" id="9he-TD-EpD">
+                                        <nil key="action"/>
+                                    </segue>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="Den-ix-fmW" id="QyO-MH-E38"/>
-                            <outlet property="delegate" destination="Den-ix-fmW" id="kaE-uH-CRC"/>
+                            <outlet property="dataSource" destination="Fps-l1-4ID" id="JST-Ya-nF5"/>
+                            <outlet property="delegate" destination="Fps-l1-4ID" id="LWw-Lj-5b6"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="i6G-Rz-IkS">
-                        <barButtonItem key="leftBarButtonItem" title="X" id="4zb-9F-8g7">
+                    <navigationItem key="navigationItem" id="B5n-lz-NMx">
+                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="2ik-Ee-egq">
                             <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <action selector="cancel:" destination="Den-ix-fmW" id="mPq-Dj-pg2"/>
+                                <action selector="cancel:" destination="Fps-l1-4ID" id="DD4-2w-Wtp"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="3031.1999999999998" y="-449.32533733133437"/>
+            <point key="canvasLocation" x="3007.1999999999998" y="355.7721139430285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="NqD-Ej-ecD">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hoj-bU-tN0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YKp-Gm-Z6k" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cLD-Ab-cfK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="aqO-PK-Gss" kind="relationship" relationship="rootViewController" id="t8R-sh-85i"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="GTS-Yr-Gxm">
+        <scene sceneID="CHd-On-qa6">
             <objects>
-                <tapGestureRecognizer id="6bF-IH-8yy">
+                <tapGestureRecognizer id="vmj-Na-XSx">
                     <connections>
-                        <segue destination="S6C-hs-pzh" kind="showDetail" identifier="departured" id="AcS-AA-D1h">
+                        <segue destination="cfe-JR-p58" kind="showDetail" identifier="destination" id="DCV-DD-u4H">
                             <nil key="action"/>
                         </segue>
                     </connections>
                 </tapGestureRecognizer>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Whh-ED-9v4" sceneMemberID="firstResponder"/>
-                <viewController id="HeA-iZ-Vub" customClass="ViewController" customModule="NextStop" customModuleProvider="target" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aOI-EX-zEp" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="cKX-CI-Trn">
+                    <connections>
+                        <segue destination="lRu-9R-LoE" kind="showDetail" identifier="departured" id="iIP-6c-P8u">
+                            <nil key="action"/>
+                        </segue>
+                    </connections>
+                </tapGestureRecognizer>
+                <viewController id="aqO-PK-Gss" customClass="ViewController" customModule="NextStop" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="oqA-0e-hFU"/>
-                        <viewControllerLayoutGuide type="bottom" id="1ML-tR-aD2"/>
+                        <viewControllerLayoutGuide type="top" id="Ha5-5g-Kvl"/>
+                        <viewControllerLayoutGuide type="bottom" id="JgI-bI-77r"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="BYH-PX-1m3">
+                    <view key="view" contentMode="scaleToFill" id="3DV-Th-snP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CVE-RP-i20">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s5Z-ib-QEd">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="OjH-23-7V1">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="laW-56-kkR">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="961"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cps-oS-weM">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EBb-vA-wC9">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="109"/>
                                                 <subviews>
-                                                    <label opaque="NO" multipleTouchEnabled="YES" alpha="0.75999999046325684" contentMode="center" fixedFrame="YES" text="ตอนนี้คุณอยู่ที่สถานี ?" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dMr-30-cMn">
+                                                    <label opaque="NO" multipleTouchEnabled="YES" alpha="0.75999999046325684" contentMode="center" fixedFrame="YES" text="ตอนนี้คุณอยู่ที่สถานี ?" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cJk-dw-Fqz">
                                                         <rect key="frame" x="20" y="32" width="267" height="27"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <accessibility key="accessibilityConfiguration" hint="" identifier="3D92ADC8-5202-4157-A7E5-DED6968649AC" label=""/>
@@ -323,7 +515,7 @@
                                                         <nil key="highlightedColor"/>
                                                         <size key="shadowOffset" width="0.0" height="0.0"/>
                                                     </label>
-                                                    <label opaque="NO" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" text="ลาดกระบัง" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="myZ-5w-qIW">
+                                                    <label opaque="NO" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" text="ลาดกระบัง" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQS-jQ-BCX">
                                                         <rect key="frame" x="20" y="62" width="267" height="27"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <accessibility key="accessibilityConfiguration" hint="" identifier="1DD3E89A-C5A3-4E42-95BD-D117EEEABCC1" label=""/>
@@ -332,30 +524,30 @@
                                                         <nil key="highlightedColor"/>
                                                         <size key="shadowOffset" width="0.0" height="0.0"/>
                                                     </label>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="page_1" translatesAutoresizingMaskIntoConstraints="NO" id="21u-RT-0rc">
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="page_1" translatesAutoresizingMaskIntoConstraints="NO" id="DoJ-pT-vVT">
                                                         <rect key="frame" x="327" y="44" width="28" height="32"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     </imageView>
                                                 </subviews>
                                                 <gestureRecognizers/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="109" id="1VI-Dg-vdI"/>
+                                                    <constraint firstAttribute="height" constant="109" id="O6G-HR-jON"/>
                                                 </constraints>
                                                 <connections>
-                                                    <outletCollection property="gestureRecognizers" destination="6bF-IH-8yy" appends="YES" id="evB-0k-FMn"/>
+                                                    <outletCollection property="gestureRecognizers" destination="cKX-CI-Trn" appends="YES" id="CUu-a3-hxa"/>
                                                 </connections>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HRi-Ih-g1t">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8tJ-fN-bEj">
                                                 <rect key="frame" x="0.0" y="109" width="375" height="1"/>
                                                 <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="1" id="2l4-sz-XB0"/>
+                                                    <constraint firstAttribute="height" constant="1" id="GHu-PC-Y2K"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J4k-fg-lWb">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wz3-cT-LcR">
                                                 <rect key="frame" x="0.0" y="110" width="375" height="109"/>
                                                 <subviews>
-                                                    <label opaque="NO" multipleTouchEnabled="YES" alpha="0.75999999046325684" contentMode="center" fixedFrame="YES" text="คุณต้องการไปยังสถานี ?" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PEJ-Nc-wSC">
+                                                    <label opaque="NO" multipleTouchEnabled="YES" alpha="0.75999999046325684" contentMode="center" fixedFrame="YES" text="คุณต้องการไปยังสถานี ?" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wwc-UJ-qjf">
                                                         <rect key="frame" x="20" y="32" width="266" height="27"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <accessibility key="accessibilityConfiguration" hint="" identifier="3D92ADC8-5202-4157-A7E5-DED6968649AC" label=""/>
@@ -364,7 +556,7 @@
                                                         <nil key="highlightedColor"/>
                                                         <size key="shadowOffset" width="0.0" height="0.0"/>
                                                     </label>
-                                                    <label opaque="NO" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" text="แตะเพื่อเลือกสถานีปลายทาง" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Keo-Lt-IjU">
+                                                    <label opaque="NO" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" text="แตะเพื่อเลือกสถานีปลายทาง" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8um-E0-vvx">
                                                         <rect key="frame" x="20" y="62" width="232" height="27"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <accessibility key="accessibilityConfiguration" hint="" identifier="1DD3E89A-C5A3-4E42-95BD-D117EEEABCC1" label=""/>
@@ -373,30 +565,30 @@
                                                         <nil key="highlightedColor"/>
                                                         <size key="shadowOffset" width="0.0" height="0.0"/>
                                                     </label>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="page_11" translatesAutoresizingMaskIntoConstraints="NO" id="GVW-Dm-EBZ">
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="page_11" translatesAutoresizingMaskIntoConstraints="NO" id="nXG-Ku-agh">
                                                         <rect key="frame" x="327" y="44" width="23" height="33"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     </imageView>
                                                 </subviews>
                                                 <gestureRecognizers/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="109" id="d22-4X-TAe"/>
+                                                    <constraint firstAttribute="height" constant="109" id="o0H-YA-IGC"/>
                                                 </constraints>
                                                 <connections>
-                                                    <outletCollection property="gestureRecognizers" destination="xeG-SP-IHf" appends="YES" id="uM0-qP-2Ux"/>
+                                                    <outletCollection property="gestureRecognizers" destination="vmj-Na-XSx" appends="YES" id="u5P-Ig-1du"/>
                                                 </connections>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dho-ck-JSK">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wVc-99-LqB">
                                                 <rect key="frame" x="0.0" y="219" width="375" height="1"/>
                                                 <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="1" id="0XL-6F-MXJ"/>
+                                                    <constraint firstAttribute="height" constant="1" id="KfK-1T-CWl"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XA4-oO-zDP">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pe3-Fi-izP">
                                                 <rect key="frame" x="0.0" y="220" width="375" height="370"/>
                                                 <subviews>
-                                                    <label opaque="NO" multipleTouchEnabled="YES" alpha="0.72000002861022949" contentMode="center" fixedFrame="YES" text="สถานที่ยอดนิยม" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3e0-wz-UV1">
+                                                    <label opaque="NO" multipleTouchEnabled="YES" alpha="0.72000002861022949" contentMode="center" fixedFrame="YES" text="สถานที่ยอดนิยม" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MfU-l0-HR4">
                                                         <rect key="frame" x="20" y="29" width="204" height="39"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <accessibility key="accessibilityConfiguration" hint="" identifier="FCF49AEE-CCBE-4F3C-9FEC-49879EC86C4D" label=""/>
@@ -405,7 +597,7 @@
                                                         <nil key="highlightedColor"/>
                                                         <size key="shadowOffset" width="0.0" height="0.0"/>
                                                     </label>
-                                                    <label opaque="NO" multipleTouchEnabled="YES" alpha="0.72000002861022949" contentMode="center" fixedFrame="YES" text="สถานีลาดกระบัง" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yfv-0A-msb">
+                                                    <label opaque="NO" multipleTouchEnabled="YES" alpha="0.72000002861022949" contentMode="center" fixedFrame="YES" text="สถานีลาดกระบัง" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x5m-TJ-NMM">
                                                         <rect key="frame" x="20" y="72" width="138" height="27"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <accessibility key="accessibilityConfiguration" hint="" identifier="B4D5E87C-5B15-40B6-A9FD-E01DB224A2B6" label=""/>
@@ -414,11 +606,11 @@
                                                         <nil key="highlightedColor"/>
                                                         <size key="shadowOffset" width="0.0" height="0.0"/>
                                                     </label>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mask1" translatesAutoresizingMaskIntoConstraints="NO" id="S2m-gz-aof">
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mask1" translatesAutoresizingMaskIntoConstraints="NO" id="HZa-cG-8ai">
                                                         <rect key="frame" x="20" y="119" width="335" height="190"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     </imageView>
-                                                    <label opaque="NO" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" text="สถานีคนเดินพระจอมเกล้าลาดกระบัง" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="64c-vs-OKy">
+                                                    <label opaque="NO" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" text="สถานีคนเดินพระจอมเกล้าลาดกระบัง" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2j1-0L-bmT">
                                                         <rect key="frame" x="20" y="324" width="265" height="16"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <accessibility key="accessibilityConfiguration" hint="" identifier="5F9493F8-D26E-4F59-856C-6450E0EF0C07" label=""/>
@@ -427,26 +619,26 @@
                                                         <nil key="highlightedColor"/>
                                                         <size key="shadowOffset" width="0.0" height="0.0"/>
                                                     </label>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="7at-xi-ivS">
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="KhK-U2-gba">
                                                         <rect key="frame" x="367" y="119" width="8" height="190"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     </imageView>
                                                 </subviews>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="370" id="3Mv-CM-j6n"/>
+                                                    <constraint firstAttribute="height" constant="370" id="xrw-A7-1Kg"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="15i-Kj-u02">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jcd-oE-wt0">
                                                 <rect key="frame" x="0.0" y="590" width="375" height="1"/>
                                                 <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="1" id="YIA-kB-4G4"/>
+                                                    <constraint firstAttribute="height" constant="1" id="p3O-Gq-mam"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I0H-eT-tFn">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NAj-uX-o91">
                                                 <rect key="frame" x="0.0" y="591" width="375" height="370"/>
                                                 <subviews>
-                                                    <label opaque="NO" multipleTouchEnabled="YES" alpha="0.72000002861022949" contentMode="center" fixedFrame="YES" text="สถานที่แนะนำ" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qrn-hs-haW">
+                                                    <label opaque="NO" multipleTouchEnabled="YES" alpha="0.72000002861022949" contentMode="center" fixedFrame="YES" text="สถานที่แนะนำ" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XFu-Mv-9yF">
                                                         <rect key="frame" x="21" y="30" width="176" height="29"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <accessibility key="accessibilityConfiguration" hint="" identifier="5A2162C1-DB8F-437E-8DD3-FFE6F7E9D90A" label=""/>
@@ -458,117 +650,75 @@
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="370" id="HKE-NK-nn4"/>
+                                                    <constraint firstAttribute="height" constant="370" id="IlP-2T-ljc"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="cps-oS-weM" secondAttribute="trailing" id="Cz1-XT-2xl"/>
-                                            <constraint firstItem="cps-oS-weM" firstAttribute="leading" secondItem="OjH-23-7V1" secondAttribute="leading" id="v4w-2n-OZY"/>
+                                            <constraint firstAttribute="trailing" secondItem="EBb-vA-wC9" secondAttribute="trailing" id="5rb-Bc-1Uw"/>
+                                            <constraint firstItem="EBb-vA-wC9" firstAttribute="leading" secondItem="laW-56-kkR" secondAttribute="leading" id="r8v-lS-isb"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="OjH-23-7V1" secondAttribute="bottom" constant="-157" id="BcZ-wy-r8p"/>
-                                    <constraint firstItem="OjH-23-7V1" firstAttribute="centerX" secondItem="CVE-RP-i20" secondAttribute="centerX" id="baQ-fP-O75"/>
-                                    <constraint firstItem="OjH-23-7V1" firstAttribute="top" secondItem="CVE-RP-i20" secondAttribute="top" id="fW9-yQ-YHc"/>
-                                    <constraint firstAttribute="trailing" secondItem="OjH-23-7V1" secondAttribute="trailing" id="r0C-Y9-bbL"/>
-                                    <constraint firstItem="OjH-23-7V1" firstAttribute="leading" secondItem="CVE-RP-i20" secondAttribute="leading" id="w7n-LR-rTx"/>
+                                    <constraint firstItem="laW-56-kkR" firstAttribute="top" secondItem="s5Z-ib-QEd" secondAttribute="top" id="jVZ-iy-KnB"/>
+                                    <constraint firstItem="laW-56-kkR" firstAttribute="leading" secondItem="s5Z-ib-QEd" secondAttribute="leading" id="jjX-Qp-yVr"/>
+                                    <constraint firstAttribute="bottom" secondItem="laW-56-kkR" secondAttribute="bottom" constant="-157" id="pSg-vK-XTF"/>
+                                    <constraint firstAttribute="trailing" secondItem="laW-56-kkR" secondAttribute="trailing" id="qUd-ZU-pLR"/>
+                                    <constraint firstItem="laW-56-kkR" firstAttribute="centerX" secondItem="s5Z-ib-QEd" secondAttribute="centerX" id="srL-XQ-7vr"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="CVE-RP-i20" secondAttribute="trailing" id="RpJ-Bo-ISX"/>
-                            <constraint firstItem="1ML-tR-aD2" firstAttribute="top" secondItem="CVE-RP-i20" secondAttribute="bottom" id="anl-tH-rJe"/>
-                            <constraint firstItem="CVE-RP-i20" firstAttribute="leading" secondItem="BYH-PX-1m3" secondAttribute="leading" id="ph5-Fm-TBx"/>
-                            <constraint firstItem="CVE-RP-i20" firstAttribute="top" secondItem="BYH-PX-1m3" secondAttribute="top" id="yah-ld-eBC"/>
+                            <constraint firstItem="JgI-bI-77r" firstAttribute="top" secondItem="s5Z-ib-QEd" secondAttribute="bottom" id="Iw6-sW-Bod"/>
+                            <constraint firstItem="s5Z-ib-QEd" firstAttribute="leading" secondItem="3DV-Th-snP" secondAttribute="leading" id="bLx-jG-KrB"/>
+                            <constraint firstItem="s5Z-ib-QEd" firstAttribute="top" secondItem="3DV-Th-snP" secondAttribute="top" id="ws6-OS-O72"/>
+                            <constraint firstAttribute="trailing" secondItem="s5Z-ib-QEd" secondAttribute="trailing" id="zaW-BL-nSF"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="hV2-hJ-jFs"/>
+                    <navigationItem key="navigationItem" id="Joz-BL-sT9"/>
                     <connections>
-                        <outlet property="StationDestinationLabel" destination="Keo-Lt-IjU" id="Nxg-bg-VTq"/>
-                        <outlet property="StationNameLabel" destination="myZ-5w-qIW" id="27l-4v-RvW"/>
+                        <outlet property="StationDestinationLabel" destination="8um-E0-vvx" id="5dh-3g-O7k"/>
+                        <outlet property="StationNameLabel" destination="NQS-jQ-BCX" id="QRz-c9-fGS"/>
                     </connections>
                 </viewController>
-                <tapGestureRecognizer id="xeG-SP-IHf">
-                    <connections>
-                        <segue destination="BAg-Du-RVo" kind="showDetail" identifier="destination" id="08w-6y-aEe">
-                            <nil key="action"/>
-                        </segue>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1056.8" y="122.78860569715144"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="XTq-Ks-2Rg">
+        <scene sceneID="117-3u-C3S">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BAg-Du-RVo" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rt1-cy-DQg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cfe-JR-p58" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JU1-BH-N2l">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eee-Uc-XjT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="nhW-cg-iyo" kind="relationship" relationship="rootViewController" id="gHn-jm-Rtz"/>
+                        <segue destination="Fps-l1-4ID" kind="relationship" relationship="rootViewController" id="Mxt-6v-D7b"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YIe-ZX-DrX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2068" y="355.7721139430285"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="9Dx-qR-GE9">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="apR-U2-i1g" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iX2-AN-s2P" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="t4l-NB-O9A">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="HeA-iZ-Vub" kind="relationship" relationship="rootViewController" id="loN-as-aWd"/>
-                    </connections>
-                </navigationController>
-            </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="auK-03-8F2">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="S6C-hs-pzh" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8uV-3x-8iJ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Den-ix-fmW" kind="relationship" relationship="rootViewController" id="4QM-ut-OMj"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aBJ-es-56s" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2092" y="-449.32533733133437"/>
-        </scene>
         <!--Select Station Table View Controller-->
-        <scene sceneID="wxi-up-GuI">
+        <scene sceneID="eYk-zF-WiN">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OWY-Hg-sRV" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tableViewController id="nhW-cg-iyo" customClass="SelectStationTableViewController" customModule="NextStop" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="69" sectionHeaderHeight="28" sectionFooterHeight="28" id="ex0-PZ-9Gl">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yy5-rm-b0b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="aYn-3a-p0D" userLabel="Exit" sceneMemberID="exit"/>
+                <tableViewController id="ClH-7F-Ups" customClass="SelectStationTableViewController" customModule="NextStop" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="69" sectionHeaderHeight="28" sectionFooterHeight="28" id="uaO-nr-56v">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <view key="tableHeaderView" contentMode="scaleToFill" id="C72-26-Gxb">
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="Kb5-ea-JVC">
                             <rect key="frame" x="0.0" y="64" width="375" height="45"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.75999999046325684" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="เลือกสถานีปลายทาง" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ilN-nz-DRY">
+                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.75999999046325684" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="เลือกสถานีต้นทาง" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rhw-7i-wod">
                                     <rect key="frame" x="20" y="0.0" width="309" height="47"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi-Bold" pointSize="36"/>
@@ -579,33 +729,33 @@
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StationTableViewCell" rowHeight="70" id="PrJ-A1-yKD" customClass="StationTableViewCell" customModule="NextStop" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StationTableViewCell" rowHeight="70" id="Ldc-5x-dd1" customClass="StationTableViewCell" customModule="NextStop" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="73" width="375" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" tableViewCell="PrJ-A1-yKD" id="TMW-f6-4x0">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" tableViewCell="Ldc-5x-dd1" id="HVj-Sy-Uzg">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="69"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="สุวรรณภูมิ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R8E-KE-Bxy" userLabel="StationName">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="สุวรรณภูมิ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r9r-TI-oPV" userLabel="StationName">
                                             <rect key="frame" x="20" y="18" width="120" height="27"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi-Bold" pointSize="20"/>
                                             <color key="textColor" red="1" green="0.41960784309999999" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" (A1)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MZf-q3-9qr" userLabel="StationId">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" (A1)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lKm-Df-mIg" userLabel="StationId">
                                             <rect key="frame" x="130" y="18" width="120" height="27"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi-Bold" pointSize="20"/>
                                             <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="icon_slash_location" translatesAutoresizingMaskIntoConstraints="NO" id="IDh-GD-zLS">
+                                        <imageView hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="icon_slash_location" translatesAutoresizingMaskIntoConstraints="NO" id="MY6-v9-9uO">
                                             <rect key="frame" x="319" y="9" width="20" height="29"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <accessibility key="accessibilityConfiguration" hint="" identifier="E8865069-B530-48FF-A411-705622FBE0FE-asset" label=""/>
                                         </imageView>
-                                        <label hidden="YES" opaque="NO" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" text="คุณอยู่ที่นี่" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z75-VA-une">
+                                        <label hidden="YES" opaque="NO" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" text="คุณอยู่ที่นี่" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5jK-4J-P5I">
                                             <rect key="frame" x="303" y="41" width="52" height="17"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <accessibility key="accessibilityConfiguration" hint="" identifier="9972EABB-4F5C-4E79-98B0-A0879D8CE61A" label=""/>
@@ -618,44 +768,42 @@
                                 </tableViewCellContentView>
                                 <inset key="separatorInset" minX="20" minY="0.0" maxX="255" maxY="0.0"/>
                                 <connections>
-                                    <outlet property="StationId" destination="MZf-q3-9qr" id="nJP-Q3-SIH"/>
-                                    <outlet property="StationName" destination="R8E-KE-Bxy" id="wPp-c7-9dz"/>
-                                    <outlet property="icon" destination="IDh-GD-zLS" id="d5D-bI-DE2"/>
-                                    <outlet property="iconLabel" destination="Z75-VA-une" id="LQ2-Dq-4Dd"/>
-                                    <segue destination="3uH-aY-vkl" kind="show" id="yka-9M-tPb">
-                                        <nil key="action"/>
-                                    </segue>
+                                    <outlet property="StationId" destination="lKm-Df-mIg" id="5fe-ps-yWe"/>
+                                    <outlet property="StationName" destination="r9r-TI-oPV" id="Njb-HC-V7N"/>
+                                    <outlet property="icon" destination="MY6-v9-9uO" id="EYX-0r-v3k"/>
+                                    <outlet property="iconLabel" destination="5jK-4J-P5I" id="MR3-Ka-J7o"/>
+                                    <segue destination="aYn-3a-p0D" kind="unwind" unwindAction="unwindToMealList:" id="veN-Wo-4fO"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StationDetailTableViewCell" rowHeight="70" id="Q4a-g8-Uel" customClass="StationDetailTableViewCell" customModule="NextStop" customModuleProvider="target">
+                            <tableViewCell autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StationDetailTableViewCell" rowHeight="70" id="EjG-dG-Nxz" customClass="StationDetailTableViewCell" customModule="NextStop" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="143" width="375" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" tableViewCell="Q4a-g8-Uel" id="b8v-Va-Iuq">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" tableViewCell="EjG-dG-Nxz" id="cBP-sE-oeZ">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="69"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="มักกะสัน" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wr9-rz-ipA" userLabel="StationName">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="มักกะสัน" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AwC-vQ-r7x" userLabel="StationName">
                                             <rect key="frame" x="19" y="8" width="266" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi-Bold" pointSize="20"/>
                                             <color key="textColor" red="1" green="0.41960784309999999" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.75999999046325684" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="จุดเชื่อมต่อ รถไฟฟ้า MRT เพชรบุรี" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bc7-pz-2nL" userLabel="StationDetail">
+                                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.75999999046325684" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="จุดเชื่อมต่อ รถไฟฟ้า MRT เพชรบุรี" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3L-LR-fgb" userLabel="StationDetail">
                                             <rect key="frame" x="19" y="39" width="266" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" (A1)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q0U-m0-6w2" userLabel="StationId">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" (A1)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qb8-bv-PNy" userLabel="StationId">
                                             <rect key="frame" x="130" y="10" width="120" height="27"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi-Bold" pointSize="20"/>
                                             <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label hidden="YES" opaque="NO" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" text="คุณอยู่ที่นี่" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hK0-qE-RaA">
+                                        <label hidden="YES" opaque="NO" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" text="คุณอยู่ที่นี่" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a7q-Cd-GJG">
                                             <rect key="frame" x="303" y="41" width="52" height="17"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <accessibility key="accessibilityConfiguration" hint="" identifier="9972EABB-4F5C-4E79-98B0-A0879D8CE61A" label=""/>
@@ -664,7 +812,7 @@
                                             <nil key="highlightedColor"/>
                                             <size key="shadowOffset" width="0.0" height="0.0"/>
                                         </label>
-                                        <imageView hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="icon_slash_location" translatesAutoresizingMaskIntoConstraints="NO" id="JSc-wX-4SP">
+                                        <imageView hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="icon_slash_location" translatesAutoresizingMaskIntoConstraints="NO" id="wJ5-sE-YKB">
                                             <rect key="frame" x="319" y="9" width="20" height="29"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <accessibility key="accessibilityConfiguration" hint="" identifier="E8865069-B530-48FF-A411-705622FBE0FE-asset" label=""/>
@@ -673,34 +821,50 @@
                                 </tableViewCellContentView>
                                 <inset key="separatorInset" minX="20" minY="0.0" maxX="255" maxY="0.0"/>
                                 <connections>
-                                    <outlet property="StationDetailLabel" destination="bc7-pz-2nL" id="3EK-H0-qMx"/>
-                                    <outlet property="StationIdLabel" destination="q0U-m0-6w2" id="87h-KV-MMr"/>
-                                    <outlet property="StationNameLabel" destination="wr9-rz-ipA" id="md6-O2-hTx"/>
-                                    <outlet property="icon" destination="JSc-wX-4SP" id="VOT-Xh-4cB"/>
-                                    <outlet property="iconLabel" destination="hK0-qE-RaA" id="hTe-gc-XoA"/>
-                                    <segue destination="3uH-aY-vkl" kind="show" id="8ff-Nv-4DV">
-                                        <nil key="action"/>
-                                    </segue>
+                                    <outlet property="StationDetailLabel" destination="z3L-LR-fgb" id="GIR-X7-ZPD"/>
+                                    <outlet property="StationIdLabel" destination="qb8-bv-PNy" id="hY3-jZ-uGi"/>
+                                    <outlet property="StationNameLabel" destination="AwC-vQ-r7x" id="nS7-qf-DDO"/>
+                                    <outlet property="icon" destination="wJ5-sE-YKB" id="4l4-A5-Eot"/>
+                                    <outlet property="iconLabel" destination="a7q-Cd-GJG" id="gD6-Aa-DjW"/>
+                                    <segue destination="aYn-3a-p0D" kind="unwind" unwindAction="unwindToMealList:" id="KIU-5h-l3k"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="nhW-cg-iyo" id="ahc-og-bEH"/>
-                            <outlet property="delegate" destination="nhW-cg-iyo" id="V67-AS-zoo"/>
+                            <outlet property="dataSource" destination="ClH-7F-Ups" id="dkd-lu-qjk"/>
+                            <outlet property="delegate" destination="ClH-7F-Ups" id="vbe-VM-SwB"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="4r4-FV-bZb">
-                        <barButtonItem key="leftBarButtonItem" title="X" id="N01-Vj-KH2">
+                    <navigationItem key="navigationItem" id="KWk-JR-mpD">
+                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="F8g-tm-5eC">
                             <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <action selector="cancel:" destination="nhW-cg-iyo" id="hc6-5Z-tcZ"/>
+                                <action selector="cancel:" destination="ClH-7F-Ups" id="AGk-BK-vWL"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="3007.1999999999998" y="355.7721139430285"/>
+            <point key="canvasLocation" x="3031.1999999999998" y="-449.32533733133437"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kuC-Mz-KR4">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kgC-CZ-xip" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jkT-o7-e4d" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hJ0-qR-EHy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="TU2-IL-Lx4" kind="relationship" relationship="rootViewController" id="2fa-gO-eC3"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="5084" y="355.7721139430285"/>
         </scene>
     </scenes>
     <resources>
@@ -714,6 +878,6 @@
         <image name="page_11" width="23" height="33"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="8ff-Nv-4DV"/>
+        <segue reference="nKz-GU-2WI"/>
     </inferredMetricsTieBreakers>
 </document>

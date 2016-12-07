@@ -21,8 +21,8 @@ class StationManager {
         Stations.append(TrainStation(name: "ลาดกระบัง", id: "A2",connectStation: nil, latitude: 13.727669, longitude: 100.748717))
         Stations.append(TrainStation(name: "บ้านทับช้าง", id: "A3",connectStation: nil, latitude: 13.732827, longitude: 100.691467))
         Stations.append(TrainStation(name: "หัวหมาก", id: "A4",connectStation: nil, latitude: 13.737958, longitude: 100.645347))
-        Stations.append(TrainStation(name: "รามคำแหง", id: "A5",connectStation: nil, latitude: 13.742963, longitude: 100.600253))
-        Stations.append(TrainStation(name: "มักกะสัน", id: "A6",connectStation: "MRT เพชรบุรี", latitude: 13.742963, longitude:100.600253))
+        Stations.append(TrainStation(name: "รามคำแหง", id: "A5",connectStation: nil, latitude: 13.742959, longitude: 100.600257))
+        Stations.append(TrainStation(name: "มักกะสัน", id: "A6",connectStation: "MRT เพชรบุรี", latitude: 13.751017, longitude:100.561346))
         Stations.append(TrainStation(name: "ราชปรารภ", id: "A7",connectStation: nil, latitude: 13.755133, longitude: 100.541826))
         Stations.append(TrainStation(name: "พญาไท", id: "A8",connectStation: "BTS พญาไท", latitude: 13.756711, longitude:100.534972))
     }
@@ -52,7 +52,7 @@ class StationManager {
     func getAllStation() ->[TrainStation] {
         return Stations
     }
-    func getStationFromIndex(index: Int) -> TrainStation {
+    func getStationFromIndex(_ index: Int) -> TrainStation {
         return Stations[index]
     }
     func getDistance(station: TrainStation, latitude: Double, longitude: Double) -> Double{
@@ -71,12 +71,36 @@ class StationManager {
         var distance: [Double] = []
         for station in Stations{
             distance.append(getDistance(station: station, latitude: latitude, longitude: longitude))
+            print("\(station.name): \(getDistance(station: station, latitude: userLocation![0], longitude: userLocation![1]))")
+
         }
         let minDistance = distance.min()
         if let index = distance.index(of: minDistance!){
              return index
         }
         return -1
+    }
+    
+    func getNextStationIndex() -> Int{
+        var distance: [Double] = []
+        for station in Stations{
+            distance.append(getDistance(station: station, latitude: userLocation![0], longitude: userLocation![1]))
+            print("\(station.name): \(getDistance(station: station, latitude: userLocation![0], longitude: userLocation![1]))")
+        }
+        if stationCurrentIndex! - stationDestinationIndex! > 0{
+            for i in stationDestinationIndex!...stationCurrentIndex!-1{
+                if distance[i] > distance[i+1]{
+                    return i
+                }
+            }
+        }else{
+            for i in stationCurrentIndex!...stationDestinationIndex!-1{
+                if distance[i] < distance[i+1]{
+                    return i
+                }
+            }
+        }
+        return stationCurrentIndex!
     }
     
 }

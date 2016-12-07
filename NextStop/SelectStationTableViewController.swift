@@ -44,7 +44,7 @@ class SelectStationTableViewController: UITableViewController{
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let stationCell = stations.getStationFromIndex(index: indexPath.row)
+        let stationCell = stations.getStationFromIndex(indexPath.row)
         
         var selected = false
         if stations.stationCurrentIndex == indexPath.row {
@@ -89,7 +89,7 @@ class SelectStationTableViewController: UITableViewController{
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        selectStation = stations.getStationFromIndex(index: (tableView.indexPathForSelectedRow?.row)!).name
+        selectStation = stations.getStationFromIndex((tableView.indexPathForSelectedRow?.row)!).name
         if stations.isDepartured{
             stations.stationCurrentIndex = (tableView.indexPathForSelectedRow?.row)!
             print("departure")
