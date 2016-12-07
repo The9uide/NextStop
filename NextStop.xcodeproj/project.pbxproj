@@ -14,6 +14,14 @@
 		7E4141D61DF40CD200F68730 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E4141D41DF40CD200F68730 /* LaunchScreen.storyboard */; };
 		7E4141E11DF40CD200F68730 /* NextStopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4141E01DF40CD200F68730 /* NextStopTests.swift */; };
 		7E4141EC1DF40CD200F68730 /* NextStopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4141EB1DF40CD200F68730 /* NextStopUITests.swift */; };
+		7E4141FC1DF411B000F68730 /* StationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4141FB1DF411B000F68730 /* StationTableViewCell.swift */; };
+		7E4142001DF412F400F68730 /* SelectStationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4141FF1DF412F400F68730 /* SelectStationTableViewController.swift */; };
+		7E4142021DF4FD5700F68730 /* TrainStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4142011DF4FD5700F68730 /* TrainStation.swift */; };
+		7E4142041DF4FF2700F68730 /* StationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4142031DF4FF2700F68730 /* StationManager.swift */; };
+		7E4142071DF4FF7100F68730 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4142061DF4FF7000F68730 /* CoreLocation.framework */; };
+		7E4142091DF4FF7C00F68730 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4142081DF4FF7C00F68730 /* MapKit.framework */; };
+		7E41420B1DF53DF200F68730 /* StationDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E41420A1DF53DF100F68730 /* StationDetailTableViewCell.swift */; };
+		7E4142101DF754A000F68730 /* StartNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E41420F1DF754A000F68730 /* StartNavigationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +55,14 @@
 		7E4141E71DF40CD200F68730 /* NextStopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NextStopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E4141EB1DF40CD200F68730 /* NextStopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextStopUITests.swift; sourceTree = "<group>"; };
 		7E4141ED1DF40CD200F68730 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E4141FB1DF411B000F68730 /* StationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationTableViewCell.swift; sourceTree = "<group>"; };
+		7E4141FF1DF412F400F68730 /* SelectStationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectStationTableViewController.swift; sourceTree = "<group>"; };
+		7E4142011DF4FD5700F68730 /* TrainStation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainStation.swift; sourceTree = "<group>"; };
+		7E4142031DF4FF2700F68730 /* StationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationManager.swift; sourceTree = "<group>"; };
+		7E4142061DF4FF7000F68730 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		7E4142081DF4FF7C00F68730 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		7E41420A1DF53DF100F68730 /* StationDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationDetailTableViewCell.swift; sourceTree = "<group>"; };
+		7E41420F1DF754A000F68730 /* StartNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartNavigationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E4142091DF4FF7C00F68730 /* MapKit.framework in Frameworks */,
+				7E4142071DF4FF7100F68730 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +99,7 @@
 				7E4141DF1DF40CD200F68730 /* NextStopTests */,
 				7E4141EA1DF40CD200F68730 /* NextStopUITests */,
 				7E4141C91DF40CD200F68730 /* Products */,
+				7E4142051DF4FF7000F68730 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,9 +116,14 @@
 		7E4141CA1DF40CD200F68730 /* NextStop */ = {
 			isa = PBXGroup;
 			children = (
+				7E41420C1DF53DF900F68730 /* Custom TableViewCell */,
+				7E4141FF1DF412F400F68730 /* SelectStationTableViewController.swift */,
+				7E4142031DF4FF2700F68730 /* StationManager.swift */,
 				7E4141CB1DF40CD200F68730 /* AppDelegate.swift */,
 				7E4141CD1DF40CD200F68730 /* ViewController.swift */,
 				7E4141CF1DF40CD200F68730 /* Main.storyboard */,
+				7E41420F1DF754A000F68730 /* StartNavigationViewController.swift */,
+				7E4142011DF4FD5700F68730 /* TrainStation.swift */,
 				7E4141D21DF40CD200F68730 /* Assets.xcassets */,
 				7E4141D41DF40CD200F68730 /* LaunchScreen.storyboard */,
 				7E4141D71DF40CD200F68730 /* Info.plist */,
@@ -123,6 +147,24 @@
 				7E4141ED1DF40CD200F68730 /* Info.plist */,
 			);
 			path = NextStopUITests;
+			sourceTree = "<group>";
+		};
+		7E4142051DF4FF7000F68730 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E4142081DF4FF7C00F68730 /* MapKit.framework */,
+				7E4142061DF4FF7000F68730 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7E41420C1DF53DF900F68730 /* Custom TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				7E4141FB1DF411B000F68730 /* StationTableViewCell.swift */,
+				7E41420A1DF53DF100F68730 /* StationDetailTableViewCell.swift */,
+			);
+			name = "Custom TableViewCell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +236,11 @@
 					7E4141C71DF40CD200F68730 = {
 						CreatedOnToolsVersion = 8.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
 					};
 					7E4141DB1DF40CD200F68730 = {
 						CreatedOnToolsVersion = 8.1;
@@ -260,7 +307,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E4141CE1DF40CD200F68730 /* ViewController.swift in Sources */,
+				7E4142021DF4FD5700F68730 /* TrainStation.swift in Sources */,
+				7E41420B1DF53DF200F68730 /* StationDetailTableViewCell.swift in Sources */,
+				7E4142101DF754A000F68730 /* StartNavigationViewController.swift in Sources */,
+				7E4142041DF4FF2700F68730 /* StationManager.swift in Sources */,
 				7E4141CC1DF40CD200F68730 /* AppDelegate.swift in Sources */,
+				7E4142001DF412F400F68730 /* SelectStationTableViewController.swift in Sources */,
+				7E4141FC1DF411B000F68730 /* StationTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
