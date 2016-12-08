@@ -64,6 +64,12 @@ class StationManager {
         return sqrt(xPoint + yPoint)
     }
     
+    func getTimeToArrive() -> Int{
+        let distance = getDistance(station: Stations[stationDestinationIndex!], latitude: userLocation![0], longitude: userLocation![1])
+        let time = distance * 28 / getDistance(station: Stations[7], latitude: Stations[1].latitude, longitude: Stations[1].longitude)
+        return 0
+    }
+    
     func setDepartureStation(){
             stationCurrentIndex = getNearestStaion(latitude: userLocation![0], longitude: userLocation![1])
     }
