@@ -154,6 +154,8 @@ class TravelingViewController: UIViewController, CLLocationManagerDelegate {
         let nextStation = stations.getStationFromIndex(stations.getNextStationIndex())
         NextStationLabel.text = nextStation.name
         DestinationStationLabel.text = stations.destinationStation()!.name
+        TimeLabel.text = "\(stations.getTimeToArrive()-1) นาที"
+//        print(stations.getTimeToArrive())
     }
     
     @IBAction func cancel(_ sender: UIBarButtonItem) {
