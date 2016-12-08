@@ -16,6 +16,8 @@ class TravelingViewController: UIViewController, CLLocationManagerDelegate {
     var locationManager:CLLocationManager!
     var stations = StationManager.sharedStationManager
     var isGrantedNotificationAccess:Bool = false
+    var flagNextStation = true
+    var flagThisStation = true
     
     @IBOutlet weak var NextStationLabel: UILabel!
     @IBOutlet weak var DestinationStationLabel: UILabel!
@@ -48,11 +50,11 @@ class TravelingViewController: UIViewController, CLLocationManagerDelegate {
             let content = UNMutableNotificationContent()
             content.title = "เตรียมตัวให้พร้อม"
             content.subtitle = "สถานีต่อไปคือสถานีปลายทางของคุณ"
-            content.body = "โปรดเตรีตมตัวลงจากขบวนรถ"
+            content.body = "โปรดเตรียมตัวลงจากขบวนรถ"
             
             //Set the trigger of the notification -- here a timer.
             let trigger = UNTimeIntervalNotificationTrigger(
-                timeInterval: 10.0,
+                timeInterval: 1,
                 repeats: false)
             
             //Set the request for the notification from the above
@@ -65,9 +67,40 @@ class TravelingViewController: UIViewController, CLLocationManagerDelegate {
             //Add the notification to the currnet notification center
             UNUserNotificationCenter.current().add(
                 request, withCompletionHandler: nil)
-            print("noti done")
         }
-        print("noti====")
+    }
+    
+    func notiForThisStation(){
+        let alert = UIAlertController(title: "ถึงแล้ว !", message: "สถานีปลายทางของท่านคือสถานีนี้", preferredStyle: .actionSheet)
+        alert.addAction(UIAlertAction(title: "ตกลง", style: .default, handler: { (action) in
+            //execute some code when this option is selected
+            //            manager.stopUpdatingLocation()
+        }))
+        
+        self.present(alert, animated: true, completion: nil)
+        
+        if isGrantedNotificationAccess{
+            let content = UNMutableNotificationContent()
+            content.title = "ถึงแล้ว !"
+            content.subtitle = "สถานีปลายทางของท่านคือสถานีนี้"
+            content.body = "โปรดเตรียมตัวลงจากขบวนรถ"
+            
+            //Set the trigger of the notification -- here a timer.
+            let trigger = UNTimeIntervalNotificationTrigger(
+                timeInterval: 1,
+                repeats: false)
+            
+            //Set the request for the notification from the above
+            let request = UNNotificationRequest(
+                identifier: "nextStation",
+                content: content,
+                trigger: trigger
+            )
+            
+            //Add the notification to the currnet notification center
+            UNUserNotificationCenter.current().add(
+                request, withCompletionHandler: nil)
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -94,7 +127,21 @@ class TravelingViewController: UIViewController, CLLocationManagerDelegate {
         
         stations.setUserLocation(la: userLocation.coordinate.latitude, lo: userLocation.coordinate.longitude)
         print("Current location = \(userLocation.coordinate.latitude) ,\(userLocation.coordinate.longitude) ")
+        stations.setDepartureStation()
+        checkForNoti(manager)
         setupUI()
+    }
+    
+    func checkForNoti(_ manager: CLLocationManager){
+        let destination = stations.stationDestinationIndex!
+        if  destination == stations.nextStationIndex! && flagNextStation{
+            notiForNextStation()
+            flagNextStation = false
+        }else if destination == stations.stationCurrentIndex! && flagThisStation{
+            notiForThisStation()
+            flagThisStation = false
+            manager.stopUpdatingLocation()
+        }
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error)

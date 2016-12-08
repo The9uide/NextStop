@@ -46,6 +46,15 @@ class StartNavigationViewController: UIViewController {
             return "ขึ้นฝั่ง สุวรรณภูมิ"
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(stations.stationCurrentIndex! - stations.stationDestinationIndex! >= 0) {
+            stations.nextStationIndex = stations.stationCurrentIndex! - 1
+        }else{
+            stations.nextStationIndex = stations.stationCurrentIndex! + 1
+        }
+        
+    }
     /*
     // MARK: - Navigation
 

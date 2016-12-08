@@ -16,6 +16,9 @@ class StationManager {
     var stationDestinationIndex: Int?
     var isDepartured = true
     var userLocation: [Double]?
+    var nextStationIndex: Int?
+    var tmpDistance: Double?
+    
     private init() {
         Stations.append(TrainStation(name: "สุวรรณภูมิ", id: "A1",connectStation: nil, latitude: 13.698090, longitude: 100.752265))
         Stations.append(TrainStation(name: "ลาดกระบัง", id: "A2",connectStation: nil, latitude: 13.727669, longitude: 100.748717))
@@ -87,20 +90,35 @@ class StationManager {
             distance.append(getDistance(station: station, latitude: userLocation![0], longitude: userLocation![1]))
             print("\(station.name): \(getDistance(station: station, latitude: userLocation![0], longitude: userLocation![1]))")
         }
-        if stationCurrentIndex! - stationDestinationIndex! > 0{
-            for i in stationDestinationIndex!...stationCurrentIndex!-1{
-                if distance[i] > distance[i+1]{
-                    return i
-                }
-            }
+        
+        if tmpDistance == nil{
+            tmpDistance = distance[nextStationIndex!]
         }else{
-            for i in stationCurrentIndex!...stationDestinationIndex!-1{
-                if distance[i] < distance[i+1]{
-                    return i
+            print("\(tmpDistance!) == \(distance[nextStationIndex!])")
+            if tmpDistance! < distance[nextStationIndex!]{
+                if stationCurrentIndex! - stationDestinationIndex! > 0{
+                    nextStationIndex = nextStationIndex! - 1
+                    tmpDistance = distance[nextStationIndex!]
+    //                for i in stationDestinationIndex!...stationCurrentIndex!-1{
+    //                    if distance[i] > distance[i+1]{
+    //                        return i
+    //                    }
+    //                }
+                }else{
+                    nextStationIndex = nextStationIndex! + 1
+                    tmpDistance = distance[nextStationIndex!]
+    //                for i in stationCurrentIndex!...stationDestinationIndex!-1{
+    //                    if distance[i] < distance[i+1]{
+    //                        return i
+    //                    }
+    //                }
                 }
+            }else{
+                tmpDistance = distance[nextStationIndex!]
             }
+            
         }
-        return stationCurrentIndex!
+        return nextStationIndex!
     }
     
 }
