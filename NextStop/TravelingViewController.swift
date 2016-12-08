@@ -126,8 +126,9 @@ class TravelingViewController: UIViewController, CLLocationManagerDelegate {
         // other wise this function will be called every time when user location changes.
         
         stations.setUserLocation(la: userLocation.coordinate.latitude, lo: userLocation.coordinate.longitude)
-        print("Current location = \(userLocation.coordinate.latitude) ,\(userLocation.coordinate.longitude) ")
+//        print("Current location = \(userLocation.coordinate.latitude) ,\(userLocation.coordinate.longitude) ")
         stations.setDepartureStation()
+        print("\(stations.stationCurrentIndex!)")
         checkForNoti(manager)
         setupUI()
     }
@@ -159,10 +160,6 @@ class TravelingViewController: UIViewController, CLLocationManagerDelegate {
         dismiss(animated: true, completion: nil)
     }
 
-    @IBOutlet weak var notii: UIButton!
-    @IBAction func no(_ sender: Any) {
-        notiForNextStation()
-    }
     
     /*
     // MARK: - Navigation

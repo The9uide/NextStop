@@ -125,14 +125,6 @@
                                 <rect key="frame" x="367" y="455" width="8" height="189"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vjw-5K-5eW">
-                                <rect key="frame" x="273" y="374" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="no:" destination="TU2-IL-Lx4" eventType="touchUpInside" id="Ku4-fI-f8K"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -148,7 +140,6 @@
                         <outlet property="DestinationStationLabel" destination="VmF-wC-j8E" id="vNd-an-hhX"/>
                         <outlet property="NextStationLabel" destination="3Bw-LO-caN" id="8bI-Lo-uvY"/>
                         <outlet property="TimeLabel" destination="LMQ-zK-j1X" id="fDm-pA-ul8"/>
-                        <outlet property="notii" destination="Vjw-5K-5eW" id="WAs-7X-bsE"/>
                     </connections>
                 </viewController>
             </objects>

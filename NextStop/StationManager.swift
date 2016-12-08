@@ -65,9 +65,7 @@ class StationManager {
     }
     
     func setDepartureStation(){
-        if stationCurrentIndex == nil{
             stationCurrentIndex = getNearestStaion(latitude: userLocation![0], longitude: userLocation![1])
-        }
     }
     
     func getNearestStaion(latitude: Double, longitude: Double) -> Int {
@@ -88,14 +86,14 @@ class StationManager {
         var distance: [Double] = []
         for station in Stations{
             distance.append(getDistance(station: station, latitude: userLocation![0], longitude: userLocation![1]))
-            print("\(station.name): \(getDistance(station: station, latitude: userLocation![0], longitude: userLocation![1]))")
+//            print("\(station.name): \(getDistance(station: station, latitude: userLocation![0], longitude: userLocation![1]))")
         }
         
         if tmpDistance == nil{
             tmpDistance = distance[nextStationIndex!]
         }else{
-            print("\(tmpDistance!) == \(distance[nextStationIndex!])")
-            if tmpDistance! < distance[nextStationIndex!]{
+//            print("\(tmpDistance!) == \(distance[nextStationIndex!])")
+            if tmpDistance! < distance[nextStationIndex!] && nextStationIndex! < stationCount()-1 && nextStationIndex! > 0 {
                 if stationCurrentIndex! - stationDestinationIndex! > 0{
                     nextStationIndex = nextStationIndex! - 1
                     tmpDistance = distance[nextStationIndex!]
